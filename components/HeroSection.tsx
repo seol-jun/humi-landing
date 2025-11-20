@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative w-full bg-[#447B4A] text-white overflow-hidden">
+
       {/* ===== 배경 그래픽들 ===== */}
 
       {/* 왼쪽 아래 물결 */}
@@ -60,7 +61,7 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* 돋보기 (오른쪽 끝에 완전 밀착) */}
+      {/* 돋보기 */}
       <div className="pointer-events-none select-none absolute right-0 top-16 w-[180px] h-[180px] md:w-[230px] md:h-[230px] z-20 translate-x-1/4">
         <Image
           src="/magnifier.png"
@@ -75,8 +76,6 @@ export default function HeroSection() {
       <div className="relative z-30 max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28 flex justify-center">
         <div className="flex flex-col items-center gap-4">
 
-          {/* === 'HUMI' 텍스트 제거됨 === */}
-
           <h1 className="text-3xl md:text-[40px] leading-snug font-black text-center text-[#222222]">
             Trace your Soul.
             <br />
@@ -87,9 +86,15 @@ export default function HeroSection() {
             “One meme. One feeling. That's all it takes to prove you're human”
           </p>
 
+          {/* ===== Hover 커짐 효과 추가됨 ===== */}
           <Link
             href="/worldview"
-            className="inline-flex items-center justify-center px-9 py-3 rounded-full bg-white text-[#222222] text-[11px] font-semibold tracking-[0.3em] uppercase"
+            className="
+              inline-flex items-center justify-center
+              px-9 py-3 rounded-full bg-white text-[#222222]
+              text-[11px] font-semibold tracking-[0.3em] uppercase
+              hover:scale-110 transition duration-200
+            "
           >
             OUR WORLD
           </Link>
