@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "HUMI WORLD",
   description: "Welcome to HUMI — The world of mystery and adventures.",
   icons: {
-    icon: "/favicon.ico", // 또는 "/favicon.png"
+    icon: "/favicon.ico?v=2", // <- 캐시 무시용 버전 파라미터
   },
   openGraph: {
     title: "HUMI WORLD",
