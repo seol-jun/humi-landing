@@ -7,7 +7,7 @@ export default function WorldviewPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* 상단 바 */}
-      <header className="w-full bg-[#f7efe5] border-b border-[#f0e3d5]">
+      <header className="w-full bg-[#f7efe5] border-b border-[#f0e3d5] text-[#2a2a2a]">
         <div className="max-w-5xl mx-auto px-6 py-4 relative">
           <Link
             href="/"
@@ -22,7 +22,7 @@ export default function WorldviewPage() {
         </div>
       </header>
 
-      {/* 본문을 전체 중앙에 */}
+      {/* 본문 */}
       <main className="w-full px-4 md:px-6 py-12 md:py-16">
         <div className="max-w-5xl mx-auto">
           <OverviewSection />
@@ -34,4 +34,3 @@ export default function WorldviewPage() {
     </div>
   );
 }
-
