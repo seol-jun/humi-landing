@@ -5,8 +5,9 @@ export default function CommunitySection() {
   return (
     <section id="community" className="w-full py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 text-[#2a2a2a]">
-        {/* 제목 */}
-        <h2 className="text-[26px] md:text-[32px] tracking-[0.3em] font-extrabold mb-12 text-center">
+        
+        {/* 제목 – 중앙 → 왼쪽 정렬 */}
+        <h2 className="text-[26px] md:text-[32px] tracking-[0.3em] font-extrabold mb-12 text-left">
           COMMUNITY
         </h2>
 
