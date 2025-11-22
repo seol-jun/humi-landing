@@ -32,9 +32,9 @@ export default function CharactersSection() {
   return (
     <section
       aria-labelledby="character-title"
-      className="max-w-4xl mx-auto"
+      className="max-w-4xl mx-auto text-[#2a2a2a]"   // ← ★ 전체 텍스트 색 지정
     >
-      {/* 섹션 헤더 – OVERVIEW랑 스타일 맞춤 */}
+      {/* 섹션 헤더 */}
       <h2
         id="character-title"
         className="text-[28px] md:text-[32px] tracking-[0.18em] font-extrabold text-[#3d7547] mb-10 md:mb-12"
@@ -63,13 +63,13 @@ export default function CharactersSection() {
                 </div>
               </div>
 
-              {/* 텍스트 – 이름 강조 & 이미지 하단 라인 맞추기 */}
+              {/* 텍스트 */}
               <div
                 className={`${
                   imageFirst ? "" : "md:order-1"
                 } flex flex-col justify-end h-full`}
               >
-                {/* 여기만 변경 */}
+                {/* 캐릭터 이름 */}
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-base md:text-lg">{c.emoji}</span>
                   <span className="text-[16px] md:text-[18px] font-bold tracking-[0.18em]">
@@ -77,7 +77,8 @@ export default function CharactersSection() {
                   </span>
                 </div>
 
-                <p className="text-[12px] md:text-[13px] leading-relaxed max-w-sm text-[#111111]">
+                {/* 설명 */}
+                <p className="text-[12px] md:text-[13px] leading-relaxed max-w-sm">
                   {c.description}
                 </p>
               </div>
