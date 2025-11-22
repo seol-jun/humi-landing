@@ -4,14 +4,14 @@ import { Chakra_Petch } from "next/font/google";
 
 const chakraPetch = Chakra_Petch({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "500", "600", "700"], // ← ★ 추가된 부분
 });
 
 export const metadata: Metadata = {
   title: "HUMI WORLD",
   description: "Welcome to HUMI — The world of mystery and adventures.",
   icons: {
-    icon: "/favicon.ico?v=2", // <- 캐시 무시용 버전 파라미터
+    icon: "/favicon.ico?v=2",
   },
   openGraph: {
     title: "HUMI WORLD",
