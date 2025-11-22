@@ -1,14 +1,15 @@
 // components/OverviewSection.tsx
+
 export default function OverviewSection() {
   return (
     <section className="max-w-4xl mx-auto text-[#2a2a2a]">
-      {/* 전체 텍스트 색상을 명시적으로 지정 */}
-      
-      <h2 className="text-[28px] md:text-[32px] tracking-[0.18em] font-extrabold text-[#3d7547] mb-8 md:mb-10">
+      {/* OVERVIEW: 모바일 32px, md 이상 60px */}
+      <h2 className="text-[32px] md:text-h1 tracking-[0.18em] font-bold text-[#3d7547] mb-8 md:mb-10">
         OVERVIEW
       </h2>
 
-      <div className="space-y-3 text-[13px] md:text-[14px] leading-relaxed">
+      {/* 본문: 모바일 14px, md 이상 20px / 기본 medium, strong 부분만 bold */}
+      <div className="space-y-3 text-[14px] md:text-body leading-relaxed font-medium">
         <p>
           HUMI is a digital detective bureau in the Web3 era.
           We don’t operate in a metaverse fantasy or some virtual playground.

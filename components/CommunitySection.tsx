@@ -5,15 +5,13 @@ export default function CommunitySection() {
   return (
     <section id="community" className="w-full py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 text-[#2a2a2a]">
-        
-        {/* 제목 – 중앙 → 왼쪽 정렬 */}
-        <h2 className="text-[26px] md:text-[32px] tracking-[0.3em] font-extrabold mb-12 text-left">
+        {/* 제목: 모바일 32px, md 이상 60px / 왼쪽 정렬 */}
+        <h2 className="text-[32px] md:text-h1 tracking-[0.3em] font-bold mb-12 text-left">
           COMMUNITY
         </h2>
 
         {/* 아이콘 3개 */}
         <div className="flex justify-center items-center gap-10 md:gap-16">
-
           {/* 1) Memex */}
           <a
             href="https://app.memex.xyz/profile/HUMI/6878bf"
@@ -45,7 +43,6 @@ export default function CommunitySection() {
               className="object-contain"
             />
 
-            {/* HUMI 배지 */}
             <div className="absolute bottom-0 right-0 translate-x-2 translate-y-2 w-14 aspect-square bg-[#f5f5f5] rounded-full flex items-center justify-center shadow-md">
               <span className="text-[#44734e] font-bold text-xs">HUMI</span>
             </div>
@@ -66,7 +63,6 @@ export default function CommunitySection() {
               className="object-contain"
             />
 
-            {/* 프로필 아바타 */}
             <div className="absolute bottom-0 right-0 translate-x-2 translate-y-2 w-14 aspect-square rounded-full overflow-hidden shadow-md">
               <Image
                 src="/community/profile.png"
@@ -77,7 +73,6 @@ export default function CommunitySection() {
               />
             </div>
           </a>
-
         </div>
       </div>
     </section>

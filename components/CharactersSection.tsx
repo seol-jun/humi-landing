@@ -32,12 +32,12 @@ export default function CharactersSection() {
   return (
     <section
       aria-labelledby="character-title"
-      className="max-w-4xl mx-auto text-[#2a2a2a]"   // ← ★ 전체 텍스트 색 지정
+      className="max-w-4xl mx-auto text-[#2a2a2a]"
     >
-      {/* 섹션 헤더 */}
+      {/* 섹션 헤더: 모바일 32px, md 이상 60px */}
       <h2
         id="character-title"
-        className="text-[28px] md:text-[32px] tracking-[0.18em] font-extrabold text-[#3d7547] mb-10 md:mb-12"
+        className="text-[32px] md:text-h1 tracking-[0.18em] font-bold text-[#3d7547] mb-10 md:mb-12"
       >
         CHARACTER
       </h2>
@@ -69,16 +69,16 @@ export default function CharactersSection() {
                   imageFirst ? "" : "md:order-1"
                 } flex flex-col justify-end h-full`}
               >
-                {/* 캐릭터 이름 */}
+                {/* 캐릭터 이름: 모바일 18px, md 이상 40px(소제목 스케일) */}
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-base md:text-lg">{c.emoji}</span>
-                  <span className="text-[16px] md:text-[18px] font-bold tracking-[0.18em]">
+                  <span className="text-base md:text-[24px]">{c.emoji}</span>
+                  <span className="text-[18px] md:text-h2 font-bold tracking-[0.18em]">
                     {c.name}
                   </span>
                 </div>
 
-                {/* 설명 */}
-                <p className="text-[12px] md:text-[13px] leading-relaxed max-w-sm">
+                {/* 설명: 모바일 14px, md 이상 20px */}
+                <p className="text-[14px] md:text-body leading-relaxed max-w-sm font-medium">
                   {c.description}
                 </p>
               </div>

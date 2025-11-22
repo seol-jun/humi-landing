@@ -38,3 +38,17 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;            /* Chrome, Safari */
 }
+/* globals.css 제일 아래 쪽에 추가 */
+@layer components {
+  .typo-h1 {
+    @apply text-h1 font-bold tracking-[0.25em];
+  }
+
+  .typo-h2 {
+    @apply text-h2 font-bold;
+  }
+
+  .typo-body {
+    @apply text-body font-medium;
+  }
+}
