@@ -1,7 +1,9 @@
 // components/OverviewSection.tsx
 export default function OverviewSection() {
   return (
-    <section className="max-w-4xl mx-auto">
+    <section className="max-w-4xl mx-auto text-[#2a2a2a]">
+      {/* 전체 텍스트 색상을 명시적으로 지정 */}
+      
       <h2 className="text-[28px] md:text-[32px] tracking-[0.18em] font-extrabold text-[#3d7547] mb-8 md:mb-10">
         OVERVIEW
       </h2>
@@ -21,7 +23,8 @@ export default function OverviewSection() {
         <p>
           <strong>HUMI exists to trace genuine humanity.</strong>
         </p>
-        <p>Our mission is clear:<br />
+        <p>
+          Our mission is clear:<br />
           <strong>Laughter. Emotion. Creativity…</strong>
         </p>
         <p>
@@ -33,4 +36,3 @@ export default function OverviewSection() {
     </section>
   );
 }
-
