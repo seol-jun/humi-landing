@@ -82,7 +82,7 @@ export default function HeroSection() {
             Be a HUMI
           </h1>
 
-          <p className="text-[20px] md:text-xs leading-relaxed text-center max-w-sm mb-4 text-[#f7f7f7]/90">
+          <p className="text-[14px] md:text-body leading-relaxed text-center max-w-sm mb-4 text-[#f7f7f7]/90">
             “One meme. One feeling. That's all it takes to prove you're human”
           </p>
 
